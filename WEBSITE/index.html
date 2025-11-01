@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristel Quisado | BSIT Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Import Lexend (for titles) and Poppins (for body) from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom CSS for smooth scrolling and clean font */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Define a soft Rose accent color to match the pink theme */
+        :root {
+            --primary-color: #e11d48; /* Rose 600 */
+        }
+        .accent-text {
+            color: var(--primary-color);
+        }
+        .accent-bg {
+            background-color: var(--primary-color);
+        }
+        /* Define Custom Font Classes */
+        .font-lexend { font-family: 'Lexend', sans-serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        
+        /* Custom styles for the slideshow */
+        .slide-container {
+            overflow: hidden;
+            position: relative;
+        }
+        .slide-track {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* --- PARALLAX EFFECT CSS --- */
+        .parallax-hero {
+            /* Create a background with a subtle placeholder image */
+            background-image: url('https://placehold.co/1920x1080/ffafbd/9f1239?text=Creative+Background+Texture');
+            background-attachment: fixed; /* This line enables the parallax effect */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .parallax-overlay {
+            /* Overlay to ensure text readability over the background */
+            background: rgba(255, 255, 255, 0.7); 
+            backdrop-filter: blur(2px);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-pink-100 to-white text-gray-800 font-poppins">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold accent-text font-lexend">Kristel Quisado</a>
+            <!-- Desktop Navigation -->
+            <nav id="desktop-menu" class="space-x-4 hidden md:block">
+                <a href="#about" class="text-gray-600 hover:accent-text transition duration-300">About</a>
+                <a href="#experience" class="text-gray-600 hover:accent-text transition duration-300">Experience</a>
+                <a href="#skills-list" class="text-gray-600 hover:accent-text transition duration-300">Skills</a>
+                <a href="#contact" class="text-gray-600 hover:accent-text transition duration-300">Contact</a>
+            </nav>
+            <!-- Mobile Menu Button - Added id="menu-button" -->
+            <button id="menu-button" class="md:hidden p-2 text-gray-600 focus:outline-none rounded-lg hover:bg-gray-100 transition duration-150">
+                <!-- Menu Icon -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation Menu - Added id="mobile-menu" and starts hidden -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-white shadow-lg pb-2">
+            <a href="#about" class="block px-4 py-2 text-gray-800 hover:accent-bg hover:text-white transition duration-200">About</a>
+            <a href="#experience" class="block px-4 py-2 text-gray-800 hover:accent-bg hover:text-white transition duration-200">Experience</a>
+            <a href="#skills-list" class="block px-4 py-2 text-gray-800 hover:accent-bg hover:text-white transition duration-200">Skills</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-800 hover:accent-bg hover:text-white transition duration-200">Contact</a>
+        </nav>
+    </header>
+
+    <!-- 1. Hero Section (PARALLAX APPLIED) -->
+    <section id="home" class="parallax-hero min-h-screen">
+        <div class="parallax-overlay h-full w-full py-20 md:py-32 flex flex-col md:flex-row items-center justify-between">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between w-full">
+                <div class="md:w-3/5 space-y-6 text-center md:text-left">
+                    <p class="text-xl text-gray-600">Hello, I'm</p>
+                    <h1 class="text-6xl sm:text-7xl font-extrabold leading-tight font-lexend">
+                        Kristel <span class="accent-text">Quisado</span>
+                    </h1>
+                    <h2 class="text-3xl font-normal text-gray-700 font-lexend">
+                        BS Information Technology Student | Creative Entrepreneur
+                    </h2>
+                    <p class="text-lg text-gray-700 max-w-xl mx-auto md:mx-0 pt-4">
+                        Blending academic rigor with real-world creativity. Focused on delivering organized, impactful digital solutions and content.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-8 justify-center md:justify-start">
+                         <a href="#contact" class="inline-block px-8 py-3 text-white font-semibold rounded-lg shadow-lg transition duration-300 transform hover:scale-105 accent-bg">
+                            Get In Touch
+                        </a>
+                        <!-- Added a link to a Resume/PDF (Placeholder) -->
+                         <a href="#" class="inline-block px-8 py-3 text-rose-600 bg-white border border-rose-500 font-semibold rounded-lg shadow-lg transition duration-300 transform hover:bg-rose-50 hover:text-rose-700">
+                            View Resume (PDF Link)
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-2/5 mt-12 md:mt-0 flex justify-center">
+                    <!-- Profile Image Placeholder - Replace with your professional photo -->
+                    <div class="w-64 h-64 sm:w-80 sm:h-80 bg-white rounded-full shadow-2xl overflow-hidden ring-4 ring-rose-300">
+                        <img src="https://placehold.co/800x800/fecaca/9f1239?text=Your+Photo" alt="Kristel Quisado Profile" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <hr class="border-gray-200">
+
+        <!-- 2. About Me Section -->
+        <section id="about" class="py-20">
+            <h2 class="text-4xl font-bold text-center mb-12 font-lexend">About Me & Vision</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <div class="space-y-6 text-lg text-gray-700">
+                    <p>
+                        I am a **BS Information Technology student** at PUP Quezon City known for being **highly organized, creative, and active** in multiple student organizations. My approach to IT is grounded in finding practical, clean, and scalable digital solutions.
+                    </p>
+                    <p>
+                        My background is unique—I don't just study systems; I've been running my own accessories shop, **BeadsnTel**, since 2023. This entrepreneurial experience has sharpened my skills in **digital content creation, brand voice, and customer engagement.**
+                    </p>
+                    <p>
+                        Whether I'm writing, editing, or managing a campaign for **Vox Nova** or developing a new project, I focus on delivering work that is both academically sound and visually impactful. I thrive in dynamic environments and am always ready to lead.
+                    </p>
+                </div>
+                <!-- Box with core attributes & Embedded Video -->
+                <div class="p-8 bg-white rounded-xl shadow-lg border border-gray-100 space-y-6">
+                    <h3 class="text-2xl font-semibold mb-4 accent-text font-lexend">My Creative Edge</h3>
+                    <!-- Embedded Video Section -->
+                    <div class="aspect-w-16 aspect-h-9 w-full rounded-lg overflow-hidden shadow-xl">
+                        <!-- Placeholder YouTube Embed - Must be loaded inside the page -->
+                        <iframe 
+                            class="w-full h-full"
+                            src="https://www.youtube.com/embed/j_8mB9k807g?si=vP2w939v5i5wK-G9" 
+                            title="YouTube video player showcasing a creative skill (e.g., editing, design, or project walkthrough)" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p class="text-sm text-gray-500 text-center pt-2">
+                        Video: Showcasing a quick skill (e.g., a design time-lapse or a project demo).
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-200">
+
+        <!-- 3. Skills & Experience Section -->
+        <section id="experience" class="py-20">
+            <h2 class="text-4xl font-bold text-center mb-16 font-lexend">Experience & Key Projects</h2>
+
+            <!-- 3A. Entrepreneurship & Business Management (Dedicated Business Presentation) -->
+            <h3 class="text-3xl font-semibold text-center mb-8 font-lexend accent-text">Entrepreneurship & Business Management</h3>
+            <div class="bg-white p-8 md:p-12 rounded-xl shadow-2xl border border-gray-100 mb-16">
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Column 1: Branding and Overview -->
+                    <div class="lg:col-span-1 space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <span class="text-5xl accent-text">✨</span>
+                            <h4 class="text-3xl font-extrabold font-lexend">BeadsnTel</h4>
+                        </div>
+                        <p class="text-gray-500 font-medium text-lg border-b pb-4 mb-4">Founder & Creative Lead (2023 - Present)</p>
+                        <p class="text-gray-700">
+                            **BeadsnTel** is my active accessories shop, serving as a real-world sandbox for **e-commerce, digital marketing, and content strategy**. It proves my capability to manage a brand from concept to customer engagement.
+                        </p>
+                        <ul class="list-none space-y-2 text-gray-700">
+                            <li class="flex items-center"><span class="accent-text mr-2">&#10003;</span> **Brand Development**</li>
+                            <li class="flex items-center"><span class="accent-text mr-2">&#10003;</span> **Copywriting & Layouts**</li>
+                            <li class="flex items-center"><span class="accent-text mr-2">&#10003;</span> **Social Media Campaigns**</li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 2: Key Initiatives (The Necklace Bar) -->
+                    <div class="lg:col-span-1 bg-pink-50 p-6 rounded-lg border-l-4 border-rose-400">
+                        <h5 class="text-xl font-bold font-lexend mb-3 accent-text">Featured Initiative: The Necklace Bar</h5>
+                        <p class="text-sm text-gray-600 mb-4">
+                            A highly popular subcollection created to meet the demand for **customizable, personalized necklaces**. This project highlights **market responsiveness** and the implementation of a tailored sales model.
+                        </p>
+                        <ul class="list-disc list-inside space-y-1 text-sm text-gray-700">
+                            <li>**Customization Model:** Designed and implemented the process flow for customer-driven product design.</li>
+                            <li>**Strong Community:** Cultivated **#BeadsnFriends**—a loyal base driven by engagement and creative campaigns.</li>
+                            <li>**Tangible Results:** Successfully managed inventory and fulfilled orders for this specialized line, ensuring high customer satisfaction.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Column 3: Creative Output & Metrics (BeadsnTel) - New Focus -->
+                    <div class="lg:col-span-1 p-6 bg-gray-50 rounded-lg">
+                        <div class="flex items-center space-x-3 mb-3">
+                            <span class="text-3xl text-gray-700">📈</span>
+                            <h5 class="text-xl font-bold font-lexend">Key Creative & Business Metrics</h5>
+                        </div>
+                        <p class="text-gray-500 mb-2 font-medium">Digital Content Management</p>
+                        <ul class="list-none space-y-2 text-sm text-gray-700">
+                            <li class="flex items-center"><span class="accent-text mr-2">&#10003;</span> **Visual Branding:** Developed complete brand identity and aesthetic standards.</li>
+                            <li class="flex items-center"><span class="accent-text mr-2">&#10003;</span> **Engagement:** Executed regular campaigns to nurture the **#BeadsnFriends** community.</li>
+                            <li class="flex items-center"><span class="accent-text mr-2">&#10003;</span> **E-Commerce:** Managed inventory, pricing, and fulfillment processes end-to-end.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3B. Leadership & Organizational Management (New Section) -->
+            <h3 class="text-3xl font-semibold text-center mb-8 font-lexend accent-text">Leadership & Organizational Management</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Card 1: Vox Nova -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-rose-400">
+                    <h4 class="text-xl font-bold font-lexend text-gray-900 mb-3">Vox Nova (Student Publication)</h4>
+                    <div class="space-y-2 text-gray-700 text-sm">
+                        <p><strong>Assoc. Editor-in-Chief for Internal Affairs:</strong> 2025 – 2026</p>
+                        <p><strong>Branding Manager:</strong> 2024 – 2025</p>
+                        <p><strong>Layout Artist:</strong> 2023 – 2024</p>
+                    </div>
+                </div>
+                
+                <!-- Card 2: COMELEC PUP QC -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-rose-400">
+                    <h4 class="text-xl font-bold font-lexend text-gray-900 mb-3">Commission of Elections (COMELEC) PUP QC</h4>
+                    <div class="space-y-2 text-gray-700 text-sm">
+                        <p><strong>Secretary-General:</strong> 2025 – 2026</p>
+                        <p><strong>Secretariat Committee:</strong> 2024 – 2025</p>
+                    </div>
+                </div>
+                
+                <!-- Card 3: Technical & IT Orgs (CITS & GDG) - UPDATED -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-rose-400">
+                    <h4 class="text-xl font-bold font-lexend text-gray-900 mb-3">IT & Developer Organizations</h4>
+                    <div class="space-y-2 text-gray-700 text-sm">
+                        <p><strong>GDG On Campus PUP - Web Development Cadet:</strong> 2024 – 2025</p>
+                        <p><strong>Commonwealth Information Technology Society - Secretary-General:</strong> 2024</p>
+                    </div>
+                </div>
+                
+                <!-- Card 4: Event & Special Committees (Siklaw & SINAGTALA) -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border-l-4 border-rose-400">
+                    <h4 class="text-xl font-bold font-lexend text-gray-900 mb-3">Event & Special Committees</h4>
+                    <div class="space-y-2 text-gray-700 text-sm">
+                        <p><strong>Siklaw Esports - Social Media Director:</strong> 2025 – 2026</p>
+                        <p><strong>PUP QC SINAGTALA 2025:</strong> Digital Committee, Tickets Cashier, Engagement Committee</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3C. Academic & Technical Projects (Slideshow) -->
+            <h3 class="text-3xl font-semibold text-center mb-8 font-lexend accent-text">Academic & Technical Projects</h3>
+            <div class="max-w-4xl mx-auto bg-white p-6 rounded-xl shadow-2xl">
+                <div id="slideshow-container" class="slide-container border border-gray-200 rounded-lg">
+                    <div id="slide-track" class="slide-track">
+                        
+                        <!-- Slide 1: System 1 -->
+                        <div class="slide p-4 text-center">
+                            <h4 class="text-2xl font-semibold font-lexend mb-4 text-gray-900">System Project 1: Inventory Management System (Web)</h4>
+                            <img src="https://placehold.co/1200x600/fde047/9d5800?text=System+1+Screenshot" alt="Screenshot of System Project 1" class="w-full h-auto object-contain rounded-md shadow-md mb-4">
+                            <p class="text-gray-600">**Description:** A web-based system developed using [Specify Language/Framework] for tracking, auditing, and generating reports for product inventory. Focus on a clean, user-friendly UI.</p>
+                        </div>
+                        
+                        <!-- Slide 2: System 2 -->
+                        <div class="slide p-4 text-center">
+                            <h4 class="text-2xl font-semibold font-lexend mb-4 text-gray-900">System Project 2: Student Enrollment Portal (Web)</h4>
+                            <img src="https://placehold.co/1200x600/fca5a5/991b1b?text=System+2+Screenshot" alt="Screenshot of System Project 2" class="w-full h-auto object-contain rounded-md shadow-md mb-4">
+                            <p class="text-gray-600">**Description:** Developed an interactive enrollment portal for university use. Features user authentication, course selection, and fee computation. Built with [Specify Technology].</p>
+                        </div>
+                        
+                        <!-- Slide 3: Mobile App -->
+                        <div class="slide p-4 text-center">
+                            <h4 class="text-2xl font-semibold font-lexend mb-4 text-gray-900">Mobile App: Community Event Tracker (Android/iOS)</h4>
+                            <img src="https://placehold.co/1200x600/a7f3d0/065f46?text=Mobile+App+Screenshot" alt="Screenshot of Mobile App Project" class="w-full h-auto object-contain rounded-md shadow-md mb-4">
+                            <p class="text-gray-600">**Description:** A mobile application built using [Specify Platform, e.g., Flutter/React Native] for finding, tracking, and registering for local community events. Integrates mapping APIs.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Slideshow Controls -->
+                <div class="flex justify-between mt-4">
+                    <button id="prev-button" class="px-4 py-2 text-white font-semibold rounded-lg shadow-md transition duration-300 accent-bg hover:bg-rose-700">
+                        &larr; Previous
+                    </button>
+                    <button id="next-button" class="px-4 py-2 text-white font-semibold rounded-lg shadow-md transition duration-300 accent-bg hover:bg-rose-700">
+                        Next &rarr;
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Skills List -->
+            <div id="skills-list" class="mt-16 pt-8 border-t border-gray-200">
+                <h3 class="text-3xl font-semibold text-center mb-8 font-lexend">Technical & Soft Skills</h3>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <span class="bg-rose-100 text-rose-800 px-4 py-2 rounded-full font-medium">HTML & CSS (Basics)</span>
+                    <span class="bg-rose-100 text-rose-800 px-4 py-2 rounded-full font-medium">JavaScript (Fundamentals)</span>
+                    <span class="bg-rose-100 text-rose-800 px-4 py-2 rounded-full font-medium">Content Creation & Copywriting</span>
+                    <span class="bg-rose-100 text-rose-800 px-4 py-2 rounded-full font-medium">Layout & Design</span>
+                    <span class="bg-rose-100 text-rose-800 px-4 py-2 rounded-full font-medium">Brand Management</span>
+                    <span class="bg-rose-100 text-rose-800 px-4 py-2 rounded-full font-medium">Organizational Leadership</span>
+                    <span class="bg-rose-100 text-rose-800 px-4 py-2 rounded-full font-medium">Academic Research & Writing</span>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-200">
+
+        <!-- 4. Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-4xl font-bold mb-4 font-lexend">Let's Connect</h2>
+                <p class="text-xl text-gray-600 mb-10">
+                    I'm currently seeking new challenges and opportunities to apply my technical and creative skills.
+                </p>
+
+                <!-- MAILTO LINK IMPLEMENTATION -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+                    <p class="text-lg mb-6 text-gray-700">
+                        The fastest way to reach me is via email. Click the button below to start composing a message.
+                    </p>
+                    <a href="mailto:kristelbatiao@gmail.com?subject=Inquiry%20from%20Portfolio&body=Hello%20Kristel%2C%0A%0AI%20am%20reaching%20out%20regarding%20[Job%20Opportunity%20/%20Project%20Collaboration%20/%20General%20Inquiry].%0A%0A[Your%20Message]" 
+                       class="inline-block w-full sm:w-auto px-10 py-4 text-white font-semibold rounded-lg shadow-md transition duration-300 hover:opacity-90 accent-bg text-lg">
+                        <svg class="w-6 h-6 inline-block mr-2 -mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 4v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path></svg>
+                        Email Kristel Now
+                    </a>
+                    <p class="mt-4 text-sm text-gray-500">
+                        Email: kristelbatiao@gmail.com
+                    </p>
+                </div>
+                <!-- END MAILTO LINK IMPLEMENTATION -->
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-lg font-medium mb-2">Kristel Quisado</p>
+            <p class="text-sm text-gray-400">&copy; 2025 | Built with HTML & Tailwind CSS</p>
+            <p class="text-xs text-gray-500 mt-2">BS Information Technology, PUP Quezon City</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactivity (Mobile Menu and Slideshow) -->
+    <script>
+        // --- 1. Mobile Menu Toggle ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (menuButton && mobileMenu) {
+                menuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                    });
+                });
+            }
+        });
+
+        // --- 2. Project Slideshow Logic ---
+        document.addEventListener('DOMContentLoaded', () => {
+            const track = document.getElementById('slide-track');
+            const slides = document.querySelectorAll('.slide');
+            const prevButton = document.getElementById('prev-button');
+            const nextButton = document.getElementById('next-button');
+            const totalSlides = slides.length;
+            let currentSlide = 0;
+
+            if (track && slides.length > 0 && prevButton && nextButton) {
+                // Function to update the slideshow position
+                const updateSlidePosition = () => {
+                    const offset = -currentSlide * 100;
+                    track.style.transform = 'translateX(' + offset + '%)';
+                };
+
+                // Next button functionality
+                nextButton.addEventListener('click', () => {
+                    currentSlide = (currentSlide + 1) % totalSlides;
+                    updateSlidePosition();
+                });
+
+                // Previous button functionality
+                prevButton.addEventListener('click', () => {
+                    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                    updateSlidePosition();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
