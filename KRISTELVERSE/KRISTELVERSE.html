@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kristel Quisado | Website Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;800;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="KRISTELVERSE.css">
+</head>
+<body class="text-gray-800 font-poppins">
+
+    <div id="checkerboard-bg"></div>
+
+    <header class="sticky top-0 z-50 bg-white shadow-md border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center relative">
+            
+            <nav id="desktop-menu" class="hidden md:flex justify-center items-center w-full nav-container-desktop">
+                
+                <a href="#about" class="text-gray-900 font-bold hover:accent-text transition duration-300">About</a>
+                <a href="#experience" class="text-gray-900 font-bold hover:accent-text transition duration-300">Experience</a>
+                <a href="#home" class="text-4xl lg:text-5xl accent-text akira-style px-4 py-1 rounded-md bg-pink-50 shadow-inner">
+                    KRISTELVERSE 🐇
+                </a>
+                
+                <a href="#skills" class="text-gray-900 font-bold hover:accent-text transition duration-300">Skills</a>
+                <a href="#contact" class="text-gray-900 font-bold hover:accent-text transition duration-300">Contact</a>
+            </nav>
+
+            <a href="#home" class="text-2xl font-bold accent-text font-lexend md:hidden">Kristel Quisado</a>
+            <button id="menu-button" class="md:hidden p-2 text-gray-600 focus:outline-none rounded-lg hover:bg-gray-100 transition duration-150">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <nav id="mobile-menu" class="hidden md:hidden bg-white shadow-lg pb-2">
+            <a href="#about" class="block px-4 py-2 text-gray-800 hover:accent-bg hover:text-white transition duration-200">About</a>
+            <a href="#experience" class="block px-4 py-2 text-gray-800 hover:accent-bg hover:text-white transition duration-200">Experience</a>
+            <a href="#skills" class="block px-4 py-2 text-gray-800 hover:accent-bg hover:text-white transition duration-200">Skills</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-800 hover:accent-bg hover:text-white transition duration-200">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="parallax-hero min-h-screen">
+        <div class="parallax-overlay h-full w-full py-20 md:py-32 flex flex-col md:flex-row items-center justify-between">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between w-full">
+                <div class="md:w-3/5 space-y-6 text-center md:text-left">
+                    <p class="text-xl text-gray-600">Hello, I'm</p>
+                    <h1 class="text-6xl sm:text-7xl font-extrabold leading-tight font-lexend">
+                        Kristel <span class="accent-text">Quisado</span>
+                    </h1>
+                    <h2 class="text-3xl font-normal text-gray-700 font-lexend">
+                        BS Information Technology Student | Creative Entrepreneur
+                    </h2>
+                    <p class="text-lg text-gray-700 max-w-xl mx-auto md:mx-0 pt-4">
+                        Blending academic rigor with real-world creativity. Focused on delivering organized, impactful digital solutions and content.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mt-8 justify-center md:justify-start">
+                        <a href="#contact" class="inline-block px-8 py-3 text-white font-semibold rounded-lg shadow-lg transition duration-300 transform hover:scale-105 accent-bg">
+                            Get In Touch
+                        </a>
+                        <a href="https://drive.google.com/file/d/1cMVt6apZ4Lce3sLNzV7DVCkRFpyramR6/view?usp=sharing" class="inline-block px-8 py-3 text-rose-600 bg-white border border-rose-500 font-semibold rounded-lg shadow-lg transition duration-300 transform hover:bg-rose-50 hover:text-rose-700">
+                            View My Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-2/5 mt-12 md:mt-0 flex justify-center">
+                    <div id="profile-image-container" class="w-64 h-64 sm:w-80 sm:h-80 bg-white rounded-xl shadow-2xl overflow-hidden ring-4 ring-[var(--primary-color)] transition duration-300 transform hover:scale-105 cursor-pointer">
+                        <img id="profile-image" src="assets/KRISTELPIX.jpg" alt="Kristel Quisado Profile" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <hr class="border-gray-200">
+        
+        <section id="about" class="py-12">
+            <div class="bg-white p-8 rounded-lg shadow-xl border-4 border-[var(--primary-color)] mb-16 text-justify">
+                <div class="flex items-center justify-center mb-4">
+                    <img src="assets/CAT.gif" alt="CAT Logo" class="w-16 h-16 object-cover mr-4">
+                    <h4 class="text-3xl font-extrabold font-lexend">About Me</h4>
+                </div>
+                <p class="text-gray-500 font-medium text-lg border-b pb-4 mb-6 text-center">BS Information Technology Student • Creative & Tech Enthusiast</p>
+                
+                <div class="space-y-4 text-gray-700 mb-6">
+                    <p>Hi! I'm <strong>Kristel Quisado</strong> — an aspiring web developer, digital creative, and student leader from <strong>PUP Quezon City</strong>. I’m passionate about creating digital experiences that blend functionality and aesthetics, whether through coding, design, or storytelling.</p>
+                    <p>My journey extends beyond the classroom — from leading organizations, managing creative teams, to running my own accessories business, <strong>BeadsnTel</strong>. Each role strengthened my skills in communication, project management, and digital innovation.</p>
+                    <p>I’m driven by curiosity and creativity — always seeking ways to merge <strong>tech and art</strong> in meaningful, engaging projects.</p>
+
+                    <div class="text-center py-4">
+                    <span class="text-2xl accent-text font-extrabold">ཐི⋆ཋྀ</span>
+                </div>
+
+                <p>Whenever I feel like people are trying to undermine my capabilities or get the better of me, I have this ritual of watching an <strong>affirmation video</strong> to lift my spirits and ground myself. This one's from <strong>Thewizardliz!</strong></p>
+
+         <div class="max-w-xl mx-auto mb-10">
+    <div class="relative h-0 pb-[56.25%] overflow-hidden rounded-lg shadow-xl">
+        <iframe 
+            class="absolute top-0 left-0 w-full h-full border-2 border-[var(--primary-color)]" 
+            src="https://www.youtube.com/embed/6J33tx0a688" 
+            title="Affirmation Video to Lift Spirits" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </div>
+        </div>
+
+                <p>If we go deep on my personality, I love to write and to speak up what's in my mind. Writing has been a sanctuary to me that could hold me together when the world feels loud, and when I found journalism in college, that's when I knew my voice had a purpose. So love is truly a language, and I listen to my favorite song to hug me.</p>
+
+
+                <div class="mt-8 flex flex-col items-center justify-center bg-white/80 backdrop-blur-lg border-2 border-[var(--primary-color)] rounded-full shadow-lg px-6 py-4 w-fit mx-auto">
+                    <audio id="musicPlayer" src="assets/kalapastangan.mp3"></audio>
+
+                    <div class="flex items-center gap-3 mb-2">
+                        <button id="playButton" class="text-[var(--primary-color)] hover:scale-110 transition text-xl">▶️</button>
+                        <div class="text-sm font-medium text-gray-700"><strong>Play favorite song:</strong></div>
+                        <span class="text-sm italic text-gray-500">"Kalapastangan" — fitterkarma</span>
+                    </div>
+
+                    <input 
+                        type="range" 
+                        id="progressBar" 
+                        value="0" 
+                        min="0" 
+                        max="100" 
+                        class="w-64 accent-[var(--primary-color)]"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-10">
+            <div class="bg-white p-8 rounded-lg shadow-xl border-4 border-[var(--primary-color)] mb-16 text-justify">
+                <div class="flex items-center justify-center mb-4">
+                    <img src="assets/logo.jpg" alt="BeadsnTel Logo" class="w-16 h-16 object-cover mr-4">
+                    <h4 class="text-3xl font-extrabold font-lexend">BeadsnTel</h4>
+                </div>
+                
+                <p class="text-gray-500 font-medium text-lg border-b pb-4 mb-4 text-center">Founder & Creative Lead (2023 - Present)</p>                
+                <p class="text-gray-700 mb-4"><strong>BeadsnTel</strong> is my active accessories shop, serving as a real-world sandbox for e-commerce, digital marketing, and content strategy. It proves my capability to manage a brand from concept to customer engagement.</p>
+                <p class="text-gray-700 mb-4">One of my newest collections is <strong>The Necklace Bar</strong>, where customers can mix and match chains and pendants from our collection to create personalized designs. This highlights creativity, customer engagement, and product customization.</p>
+                <p class="text-gray-700 mb-6">I created two Carrd sites from scratch for BeadsnTel: one showcases the shop with all designs, pricelists, and platform links, while the other is dedicated to <strong>The Necklace Bar</strong>, acting as a digital gallery for customers to explore, select, and visualize their custom pieces seamlessly.</p>
+                <ul class="list-none space-y-2 text-gray-700 mb-6">
+                    <li class="flex items-center"><strong><span class="mr-3 accent-text">❀</span> Brand Development</strong></li>
+                    <li class="flex items-center"><strong><span class="mr-3 accent-text">❀</span> Copywriting & Layouts</strong></li>
+                    <li class="flex items-center"><strong><span class="mr-3 accent-text">❀</span> Social Media Campaigns</strong></li>
+                    <li class="flex items-center"><strong><span class="mr-3 accent-text">❀</span> Product Customization & Customer Engagement</strong></li>
+                    <li class="flex items-center"><strong><span class="mr-3 accent-text">❀</span> Website Creation & Digital Galleries</strong></li>
+                </ul>
+
+                
+                <h5 class="text-xl font-bold font-lexend accent-text text-center mt-6 mb-4">Digital Showcases: Carrd Landing Pages</h5>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <a href="https://beadsntel.carrd.co/" target="_blank" class="block group rounded-xl overflow-hidden shadow-lg border border-gray-200 transition duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                        <img src="assets/beadsntel.png" alt="Screenshot of BeadsnTel Carrd Landing Page" class="w-full h-auto object-cover">
+                        <div class="p-3 text-center bg-gray-50 group-hover:bg-pink-100">
+                            <p class="font-semibold text-sm text-gray-800">BeadsnTel Main Site (Carrd)</p>
+                            <p class="text-xs text-gray-500">Click to View Shop & Ordering Process</p>
+                        </div>
+                    </a>
+                    
+                    <a href="https://bnt-thenecklacebar.carrd.co/" target="_blank" class="block group rounded-xl overflow-hidden shadow-lg border border-gray-200 transition duration-300 hover:shadow-2xl hover:scale-[1.02]">
+                        <img src="assets/thenecklacebar.png" alt="Screenshot of The Necklace Bar Carrd Page" class="w-full h-auto object-cover">
+                        <div class="p-3 text-center bg-gray-50 group-hover:bg-pink-100">
+                            <p class="font-semibold text-sm text-gray-800">The Necklace Bar Customization (Carrd)</p>
+                            <p class="text-xs text-gray-500">Click to View The Necklace Bar</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="bg-white/30 backdrop-blur-md border border-white/40 rounded-2xl shadow-lg p-8 mb-16 text-justify">
+                
+                <h3 class="text-3xl font-semibold text-center font-lexend accent-text bg-white rounded-xl px-6 py-2 w-max mx-auto shadow-xl mb-8"> ✮ Leadership & Organizational Management </h3>
+                
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-lg transition duration-300 transform hover:scale-[1.02] hover:shadow-xl" 
+                    style="border: 4px solid rgba(255, 0, 101, 0.8);">
+                        <h4 class="text-xl font-bold font-lexend text-gray-900 mb-2">Vox Nova (Student Publication)</h4>
+                        <p class="text-gray-700 mb-3">Official student publication of PUP Quezon City, contributing to editorial, branding, and layout work.</p>
+                        <div class="space-y-1 text-gray-700 text-sm">
+                            <p><strong>Layout Artist:</strong> 2023 – Present</p>
+                            <p><strong>Branding Manager:</strong> 2024 – 2025</p>
+                            <p><strong>Assoc. Editor-in-Chief for Internal Affairs:</strong> 2025 – 2026</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-lg transition duration-300 transform hover:scale-[1.02] hover:shadow-xl" 
+                    style="border: 4px solid rgba(255, 0, 101, 0.8);">
+                        <h4 class="text-xl font-bold font-lexend text-gray-900 mb-2">Commission on Elections (COMELEC) PUP QC</h4>
+                        <p class="text-gray-700 mb-3">Official student electoral body, ensuring fair and transparent student elections at PUP Quezon City.</p>
+                        <div class="space-y-1 text-gray-700 text-sm">
+                            <p><strong>Secretariat Committee:</strong> 2024 – 2025</p>
+                            <p><strong>Secretary-General:</strong> 2025 – 2026</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg transition duration-300 transform hover:scale-[1.02] hover:shadow-xl" 
+                    style="border: 4px solid rgba(255, 0, 101, 0.8);">
+                        <h4 class="text-xl font-bold font-lexend text-gray-900 mb-2">Google Developer Groups On Campus PUP</h4>
+                        <p class="text-gray-700 mb-3">Part of Google Developer Groups on Campus, focusing on web development projects, workshops, and collaborative coding.</p>
+                        <div class="space-y-1 text-gray-700 text-sm">
+                            <p><strong>Web Development Cadet:</strong> 2024 – 2025</p>
+                            <p><strong>Secretariat:</strong> 2025 – 2026</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg transition duration-300 transform hover:scale-[1.02] hover:shadow-xl" 
+                    style="border: 4px solid rgba(255, 0, 101, 0.8);">
+                        <h4 class="text-xl font-bold font-lexend text-gray-900 mb-2">Commonwealth Information Technology Society (COMMITS)</h4>
+                        <p class="text-gray-700 mb-3">Student organization for IT students at PUP QC, promoting tech skill-building, projects, and leadership opportunities.</p>
+                        <div class="space-y-1 text-gray-700 text-sm">
+                            <p><strong>Secretary-General:</strong> 2024 – 2025</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg transition duration-300 transform hover:scale-[1.02] hover:shadow-xl" 
+                    style="border: 4px solid rgba(255, 0, 101, 0.8);">
+                        <h4 class="text-xl font-bold font-lexend text-gray-900 mb-2">Siklaw Esports</h4>
+                        <p class="text-gray-700 mb-3">Campus-based eSports organization, focused on promoting competitive gaming and community engagement.</p>
+                        <div class="space-y-1 text-gray-700 text-sm">
+                            <p><strong>Social Media Director:</strong> 2025 – 2026</p>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg transition duration-300 transform hover:scale-[1.02] hover:shadow-xl" 
+                    style="border: 4px solid rgba(255, 0, 101, 0.8);">
+                        <h4 class="text-xl font-bold font-lexend text-gray-900 mb-2">PUP QC SINAG-TALA</h4>
+                        <p class="text-gray-700 mb-3">Student-led media and events team that organized and managed the 27th PUP Quezon City Founding Anniversary celebration through creative content, campus-wide activities, and advocacy-driven initiatives.</p>
+                        <div class="space-y-1 text-gray-700 text-sm"><p>
+                            <strong>Digital Committee / Tickets Cashier / Engagement Committee:</strong> 2025</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex justify-center mt-4 mb-10 col-span-full">
+                        <div class="bg-white p-6 rounded-xl shadow-lg transition duration-300 transform hover:scale-[1.02] hover:shadow-xl" 
+                        style="border: 4px solid rgba(255, 0, 101, 0.8);">
+                            <h4 class="text-xl font-bold font-lexend text-gray-900 mb-2 text-center">Kapatiran ng Talino at Galing (KATAGA)</h4>
+                            <p class="text-gray-700 mb-3 text-center">A premier academic organization that fosters excellence, leadership, and scholarly growth among outstanding students.</p>
+                            <div class="space-y-1 text-gray-700 text-sm text-center">
+                                <p><strong>Assistant Public Relation Officer for Internal Affairs:</strong> 2025 – 2026</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-10">
+
+           <div class="bg-white p-8 md:p-12 rounded-2xl shadow-xl border-4 border-[var(--primary-color)] mb-16">
+                <h3 class="text-3xl font-semibold text-center mb-6 font-lexend accent-text">My Core Skillset 🌟</h3>
+                <p class="text-center text-lg text-gray-700 mb-10 max-w-3xl mx-auto">
+                    My skills are a combination of my IT degree, real-world business experience, and commitment to student leadership, allowing me to deliver creative and organized digital solutions.
+                </p>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg border-b-4 border-pink-500 hover:shadow-2xl transition duration-300 transform hover:scale-[1.01]">
+                        <h4 class="text-xl font-bold font-lexend text-gray-900 mb-4">Technical & Web Development</h4> 
+                        <p class="text-sm italic text-gray-600 mb-4 border-b pb-3 text-justify">
+                            Knowledge acquired through coursework and applied in academic projects like the PUP Gym Reservation System.
+                        </p>
+                        <ul class="space-y-4 text-left text-gray-700">
+                            <li class="border-l-4 pl-3 border-[var(--primary-color)]">
+                                <p class="font-semibold text-gray-900">Front-end Development (HTML/CSS/Tailwind)</p>
+                                <p class="text-sm text-justify">Proficient in structuring web pages and applying modern, responsive design styles, proven by multiple class projects.</p>
+                            </li>
+                            <li class="border-l-4 pl-3 border-[var(--primary-color)]">
+                                <p class="font-semibold text-gray-900">Programming Languages (Python, C#, Java)</p>
+                                <p class="text-sm text-justify">Used Python (Tkinter) for the Blood Link Hub system and Java/C# in other back-end academic projects.</p>
+                            </li>
+                            <li class="border-l-4 pl-3 border-[var(--primary-color)]">
+                                <p class="font-semibold text-gray-900">Database & Cloud (SQLite, Firebase, FlutterFlow)</p>
+                                <p class="text-sm text-justify">Experience in data tracking for systems (SQLite) and developing mobile apps with Firebase backend (Home RemedEase).</p>
+                            </li>
+                            <li class="border-l-4 pl-3 border-[var(--primary-color)]">
+                                <p class="font-semibold text-gray-900">Version Control (Git & GitHub)</p>
+                                <p class="text-sm text-justify">Applied Git for collaborative team projects (like the PUP Gym system) to manage source code and track changes.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg border-b-4 border-pink-500 hover:shadow-2xl transition duration-300 transform hover:scale-[1.01]">
+                        <h4 class="text-xl font-bold font-lexend text-gray-900 mb-4">Creative & Branding</h4>
+                        <p class="text-sm italic text-gray-600 mb-4 border-b pb-3 text-justify">
+                            Hands-on skills developed through managing BeadsnTel, branding for Vox Nova, and creating digital campaigns.
+                        </p>
+                        <ul class="space-y-4 text-left text-gray-700">
+                            <li class="border-l-4 pl-3 border-[var(--primary-color)]">
+                                <p class="font-semibold text-gray-900">Graphic Design & Layout</p>
+                                <p class="text-sm text-justify">Created layouts for Vox Nova campaigns, teasers, social media posts, and product graphics for BeadsnTel.</p>
+                            </li>
+                            <li class="border-l-4 pl-3 border-[var(--primary-color)]">
+                                <p class="font-semibold text-gray-900">Copywriting & Campaign Strategy</p>
+                                <p class="text-sm text-justify">Developed compelling captions and narratives for student advocacy and business marketing content.</p>
+                            </li>
+                            <li class="border-l-4 pl-3 border-[var(--primary-color)]">
+                                <p class="font-semibold text-gray-900">E-commerce & Product Customization</p>
+                                <p class="text-sm text-justify">Launched and managed BeadsnTel (since 2023), including the custom "The Necklace Bar" collection to boost customer engagement.</p>
+                            </li>
+                            <li class="border-l-4 pl-3 border-[var(--primary-color)]">
+                                <p class="font-semibold text-gray-900">Multimedia Platform Management</p>
+                                <p class="text-sm text-justify">Contributed to and branded content for Vox Nova’s multimedia arm, Vox TV, and various student events (SINAG-TALA).</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gray-50 p-6 rounded-xl shadow-lg border-b-4 border-pink-500 hover:shadow-2xl transition duration-300 transform hover:scale-[1.01]">
+                        <h4 class="text-xl font-bold font-lexend text-gray-900 mb-4">Leadership & Management</h4>
+                        <p class="text-sm italic text-gray-600 mb-4 border-b pb-3 text-justify">
+                            Proven ability to lead teams and manage high-stakes projects across multiple major student organizations.
+                        </p>
+                        <ul class="space-y-4 text-left text-gray-700">
+                            <li class="border-l-4 pl-3 border-[var(--primary-color)]">
+                                <p class="font-semibold text-gray-900">Project & Team Management</p>
+                                <p class="text-sm text-justify">Managed deadlines and coordinated teams as Secretary-General of COMMITS and various leadership roles in other orgs.</p>
+                            </li>
+                            <li class="border-l-4 pl-3 border-[var(--primary-color)]">
+                                <p class="font-semibold text-gray-900">Organizational Structure & Documentation</p>
+                                <p class="text-sm text-justify">Handled official documents and logistical processes efficiently as part of the COMELEC Secretariat and COMMITS leadership.</p>
+                            </li>
+                            <li class="border-l-4 pl-3 border-[var(--primary-color)]">
+                                <p class="font-semibold text-gray-900">Academic Excellence & Research</p>
+                                <p class="text-sm text-justify">Recognized multiple times for academic work and is a member of the academic organization KATAGA.</p>
+                            </li>
+                            <li class="border-l-4 pl-3 border-[var(--primary-color)]">
+                                <p class="font-semibold text-gray-900">Time Management</p>
+                                <p class="text-sm text-justify">Successfully balanced a full IT course load, multiple organizational duties, and a running small business (BeadsnTel).</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 md:p-12 rounded-xl shadow-2xl mb-16">
+                <h3 class="text-3xl font-semibold text-center mb-8 font-lexend accent-text">Academic & Technical Projects</h3>
+                <div class="max-w-4xl mx-auto">
+                    <div id="slideshow-container" class="slide-container border border-gray-200 rounded-lg">
+                        <div id="slide-track" class="slide-track">
+                            <div class="slide p-4 text-center text-justify">
+                                <h4 class="text-2xl font-semibold font-lexend mb-4 text-gray-900">System Project 1: PUP Quezon City Gym Reservation(Web)</h4>
+                                <img src="assets/PUPQCGym.png" alt="Screenshot of System Project 1" class="w-full h-auto object-contain rounded-md shadow-md mb-4">
+                                <p class="text-gray-600"><strong>Description:</strong> A web-based gym reservation system developed using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>Java</strong> for the front-end, with <strong>C#</strong> handling the back-end. The project is managed through a <strong>GitHub repository</strong> for version control and collaboration. The system allows students to reserve gym slots, manage schedules, and track usage efficiently, featuring a clean and user-friendly interface for seamless booking and management.</p>
+                            </div>
+
+                            <div class="slide p-4 text-center text-justify">
+                                <h4 class="text-2xl font-semibold font-lexend mb-4 text-gray-900">System Project 2: Blood Link Hub (Web)</h4>
+                                <img src="assets/BloodLink.png" alt="Screenshot of System Project 2" class="w-full h-auto object-contain rounded-md shadow-md mb-4">
+                                <p class="text-gray-600"><strong>Description:</strong> Developed a <strong>Blood Donation Tracking System</strong> called <strong>Blood Link Hub</strong>. The system records and monitors blood donations, tracking donor information, blood types, donation volume (in mL), and donation times. Built with <strong>Python</strong> using <strong>Tkinter</strong> for the interface and <strong>SQLite</strong> for database management.</p>
+                            </div>
+
+                            <div class="slide p-4 text-center text-justify">
+                                <h4 class="text-2xl font-semibold font-lexend mb-4 text-gray-900">Mobile App: Home RemedEase (Android/iOS)</h4>
+                                <img src="assets/HomeRem.png" alt="Screenshot of Mobile App Project" class="w-full h-auto object-contain rounded-md shadow-md mb-4">
+                                <p class="text-gray-600"><strong>Description:</strong> A mobile application called <strong>Home RemedEase</strong> built using <strong>FlutterFlow</strong> and <strong>Firebase</strong> by Google. The app allows users to submit home remedies, which are then reviewed and approved by admins. Approved remedies can be shared with the community, featuring separate user and admin panels for easy management and interaction.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between mt-4">
+                        <button id="prev-button" class="px-4 py-2 text-white font-semibold rounded-lg shadow-md transition duration-300 accent-bg hover:bg-rose-700">
+                            &larr; Previous
+                        </button>
+                        <button id="next-button" class="px-4 py-2 text-white font-semibold rounded-lg shadow-md transition duration-300 accent-bg hover:bg-rose-700">
+                            Next &rarr;
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-200">
+
+        <section id="contact" class="py-20">
+            <div class="bg-white p-8 rounded-lg shadow-xl border-4 border-[var(--primary-color)]">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-4xl font-bold mb-4 font-lexend">Let's Connect</h2>
+                    <p class="text-xl text-gray-600 mb-10">
+                        I'm currently seeking new challenges and opportunities to apply my technical and creative skills.
+                    </p>
+
+                    <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 mb-8">
+                        <p class="text-lg mb-6 text-gray-700">
+                            The fastest way to reach me is via email. Click the button below to start composing a message.
+                        </p>
+                        <a href="mailto:kristelbatiao@gmail.com?subject=Inquiry%20from%20Portfolio&body=Hello%20Kristel%2C%0A%0AI%20am%20reaching%20out%20regarding%20[Job%20Opportunity%20/%20Project%20Collaboration%20/%20General%20Inquiry].%0A%0A[Your%20Message]" 
+                            class="inline-block w-full sm:w-auto px-10 py-4 text-white font-semibold rounded-lg shadow-md transition duration-300 hover:opacity-90 accent-bg text-lg">
+                            <svg class="w-6 h-6 inline-block mr-2 -mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-2 4v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path></svg>
+                            Email Ms. Quisado Now
+                        </a>
+                        <p class="mt-4 text-sm text-gray-500">
+                            Email: kristelbatiao@gmail.com
+                        </p>
+                    </div>
+                    
+                    <p class="text-lg font-semibold text-gray-800 mb-4">
+                        You may also connect with me here:
+                    </p>
+                    <div class="flex justify-center space-x-6">
+
+                        <a href="https://github.com/kristel-quisado" target="_blank" title="GitHub Profile"
+                        class="transition duration-300 transform hover:scale-110">
+                        <svg class="w-10 h-10" viewBox="0 0 24 24" aria-hidden="true" fill="#333333">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577 0-.285-.011-1.042-.017-2.049-3.335.723-4.032-1.609-4.032-1.609-.545-1.386-1.328-1.754-1.328-1.754-1.088-.744.085-.729.085-.729 1.205.084 1.838 1.237 1.838 1.237 1.07 1.835 2.793 1.302 3.473.998.109-.775.424-1.302.775-1.603-2.665-.302-5.466-1.334-5.466-5.923 0-1.31.467-2.384 1.236-3.224-.124-.303-.536-1.524.118-3.176 0 0 1.006-.323 3.301 1.23.957-.266 1.983-.398 3.003-.404 1.02.006 2.045.138 3.003.404 2.296-1.553 3.301-1.23 3.301-1.23.654 1.652.242 2.873.118 3.176.77.84 1.235 1.914 1.235 3.224 0 4.601-2.804 5.62-5.474 5.918.434.378.823 1.107.823 2.227 0 1.607-.015 2.897-.015 3.289 0 .318.192.695.8.575C20.563 21.808 24 17.311 24 12 24 5.373 18.627 0 12 0z"/>
+                        </svg>
+                    </a>
+
+                        <a href="https://linkedin.com/in/kristelq" target="_blank" title="LinkedIn Profile"
+                        class="transition duration-300 transform hover:scale-110">
+                        <svg class="w-10 h-10" viewBox="0 0 24 24" aria-hidden="true" fill="#0A66C2"> 
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.13-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.757 7 2.676v6.559z"/>
+                        </svg>
+                    </a>
+
+                        <a href="https://facebook.com/kristaIIein" target="_blank" title="Facebook Profile"
+                        class="transition duration-300 transform hover:scale-110">
+                        <svg class="w-10 h-10" viewBox="0 0 24 24" aria-hidden="true" fill="#1877F2"> 
+                            <path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .733.593 1.325 1.325 1.325h11.493v-9.294h-3.133v-3.626h3.133v-2.617c0-3.111 1.89-4.814 4.67-4.814 1.325 0 2.464.099 2.793.143v3.235h-1.921c-1.503 0-1.792.714-1.792 1.765v2.316h3.587l-.467 3.626h-3.12v9.294h6.11c.732 0 1.325-.593 1.325-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+                        </svg>
+                    </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <div id="scroll-buttons" class="fixed bottom-6 right-6 z-40">
+        <button id="scroll-toggler" class="p-3 bg-white accent-text rounded-full shadow-lg opacity-90 hover:opacity-100 transition duration-300 transform hover:scale-110 border-2 border-[var(--primary-color)]">
+            <svg id="scroll-icon" class="w-6 h-6 accent-text" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </button>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-8 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-lg font-medium mb-2">Kristel Quisado</p>
+            <p class="text-sm text-gray-400">&copy; 2025 | Built with HTML & Tailwind CSS</p>
+            <p class="text-xs text-gray-500 mt-2">BS Information Technology, PUP Quezon City</p>
+        </div>
+    </footer>
+
+    <div id="lightbox-modal" class="fixed inset-0 bg-black bg-opacity-80 hidden z-[9999] flex justify-center items-center p-4 transition-opacity duration-300">
+        <div class="relative max-w-4xl max-h-full">
+            <button id="close-button" class="absolute -top-10 right-0 text-white text-xl font-semibold hover:text-red-500 transition duration-150 p-2 focus:outline-none">
+                CLOSE
+            </button>
+            <img id="lightbox-image" src="" alt="Full Kristel Quisado Profile" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl">
+        </div>
+    </div>
+    
+    <script src="KRISTELVERSE.js"></script>
+</body>
+</html>
