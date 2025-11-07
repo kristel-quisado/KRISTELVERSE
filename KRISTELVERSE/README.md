@@ -23,6 +23,17 @@ KRISTELVERSE/
 ├── KRISTELVERSE.js              # Custom scripts
 └── KRISTELVERSE.html            # Main portfolio HTML page
 
+How to Run Locally?
+  1. Clone the repository
+    - git clone https://github.com/kristel-quisado/your-repo-name.git
+  2. Navigate to the project folder
+    - cd your-repo-name
+  3. Open the website
+    - Open index.html in your browser (double-click the file or right-click → Open With → Browser).
+    - No server setup is required since this is a static website.
+  4. Optional: Use Live Server for development
+    - If you have VS Code, install the Live Server extension for live reload during edits.
+
 Features:
 - Responsive Layout: Optimized for mobile, tablet, and desktop screens using Tailwind CSS.
 - Scroll to Top Button: Convenient page navigation.
